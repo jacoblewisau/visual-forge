@@ -1,6 +1,6 @@
 <reference name="icon-design-principles" domain="icon">
 
-<!-- TOC: grid_system, stroke_conventions, optical_corrections, metaphor_methodology, clarity_hierarchy, lucide_alignment, size_tiers, common_mistakes -->
+<!-- TOC: grid_system, stroke_conventions, optical_corrections, metaphor_methodology, clarity_hierarchy, apple_hig_alignment, lucide_alternative, size_tiers, common_mistakes -->
 
 <section name="grid_system">
 
@@ -120,9 +120,43 @@ At small sizes, every pixel counts. Icons must communicate through a strict clar
 
 </section>
 
-<section name="lucide_alignment">
+<section name="apple_hig_alignment">
 
-Lucide (the open-source icon set) represents current best practices for developer-facing icon design. When designing icons for technical products, Lucide conventions provide a solid baseline.
+Apple's Human Interface Guidelines and SF Symbols represent the gold standard for icon design in native app contexts. When designing icons, SF Symbols conventions are the primary baseline.
+
+**Core SF Symbols Principles:**
+- Typographic grid anchored to SF Pro cap height — icons align to text metrics, not arbitrary pixel grids
+- Round cap and round join on all strokes (system-wide convention)
+- 9 weights (ultralight → black) mapping 1:1 to SF Pro text weights
+- 3 scales (small/medium/large) controlling glyph size within fixed point size
+- 4 rendering modes: monochrome, hierarchical, palette, multicolor (layer-based)
+- Stroke-to-outline conversion — symbols are defined by filled paths, not stroked paths
+- Optical weight over mathematical uniformity — horizontal strokes thinner than vertical
+
+**Key Lines (bounding templates):**
+- Circle, square, horizontal rectangle, vertical rectangle
+- Symbols fill the appropriate key line shape
+- Circular symbols touch all four edges; rectangular symbols fill the dominant axis and optically center the other
+
+**Fill vs. Outline Context Rules:**
+- Tab bars: fill variant (system-enforced)
+- Toolbars, navigation bars, sidebars: outline variant
+- Selected states: fill; unselected: outline
+- Swipe actions: fill
+
+**Rendering Mode Selection:**
+- Monochrome: high contrast, abstract controls, colored backgrounds
+- Hierarchical: depth/layering (primary 100%, secondary ~50%, tertiary ~30%)
+- Palette: distinct semantic colors per layer (up to 3)
+- Multicolor: real-world objects with recognized color associations
+
+**For detailed SF Symbols grid, weights, scales, and custom design rules, see `apple-hig-sf-symbols.md`.**
+
+</section>
+
+<section name="lucide_alternative">
+
+Lucide is an alternative baseline for open-source and cross-platform projects where SF Symbols conventions don't apply (web apps, Electron, Android).
 
 **Lucide Conventions:**
 - 24px grid with 2px stroke weight
@@ -132,11 +166,11 @@ Lucide (the open-source icon set) represents current best practices for develope
 - Minimal fills — stroke-based design language
 - No shadows, no gradients, no dimension
 
-**When to Diverge from Lucide:**
-- Product icons that need personality (add fill, custom shapes)
-- Brand-specific icons that need differentiation
-- Illustrated icons that intentionally break from line-art conventions
-- Icons that need to work at sizes below 16px or above 48px
+**When to Use Lucide Instead of Apple HIG:**
+- Cross-platform web applications
+- Open-source projects needing freely available icon sets
+- Projects already using Lucide/Feather icons throughout
+- Android or Linux-targeted applications
 
 </section>
 

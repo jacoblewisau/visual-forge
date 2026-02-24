@@ -94,8 +94,9 @@ All in `references/`. Agents read these — orchestrator never reads directly.
 <ref file="mascot/healing-character.md" lines="~204">Healing lens</ref>
 <ref file="mascot/burnt-toast.md" lines="~165">Cynicism lens</ref>
 <ref file="mascot/narrative-framework.md" lines="~171">Species mapping, naming</ref>
-<ref file="icon/icon-design-principles.md" lines="~120">Grid, stroke, clarity methodology</ref>
-<ref file="icon/icon-lens-system.md" lines="~80">How 5 lenses apply to icons</ref>
+<ref file="icon/icon-design-principles.md" lines="~200">Grid, stroke, clarity, Apple HIG alignment</ref>
+<ref file="icon/icon-lens-system.md" lines="~90">How 5 lenses apply to icons (HIG quality gate)</ref>
+<ref file="icon/apple-hig-sf-symbols.md" lines="~200">SF Symbols grid, weights, scales, rendering modes, custom design</ref>
 <ref file="button/button-design-principles.md" lines="~100">Illustrated button methodology</ref>
 <ref file="button/button-lens-system.md" lines="~70">How 5 lenses apply to buttons</ref>
 

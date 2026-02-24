@@ -43,8 +43,9 @@ Optional:
 
 <icon_references>
 Icon-specific references in `references/icon/`:
-- icon-design-principles.md — Grid systems, stroke conventions, optical corrections, metaphor methodology
-- icon-lens-system.md — How each designer lens applies to icon design
+- icon-design-principles.md — Grid systems, stroke conventions, optical corrections, metaphor methodology, Apple HIG alignment
+- icon-lens-system.md — How each designer lens applies to icon design (includes HIG quality gate checks)
+- apple-hig-sf-symbols.md — Apple HIG principles, SF Symbols design grid, weights, scales, rendering modes, custom symbol design
 
 Shared references in `references/shared/`:
 - brookes-eggleston.md — Shape language fundamentals (circle/square/triangle)

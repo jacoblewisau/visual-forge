@@ -113,10 +113,13 @@ Applied to ALL icon concepts regardless of lens. These are non-negotiable struct
 | Shape language | Primary shape is identifiable and intentional |
 | Metaphor clarity | Concept identifiable without label in 3 seconds |
 | Grid compliance | All elements aligned to grid, consistent padding |
-| Stroke consistency | One weight, one cap style, one join style |
+| Stroke consistency | One weight, one cap style (round), one join style (round) |
 | Color budget | Within tier limit (1-4 colors depending on size) |
 | Set cohesion | Matches siblings in visual weight and complexity |
 | Scale test | Reads correctly from 16px to 32px without modification |
+| HIG optical weight | Visual mass balanced with adjacent symbols — no heavy/light outliers |
+| Rendering mode ready | Layers assigned (primary/secondary/tertiary) for hierarchical/palette support |
+| Weight correspondence | Stroke density matches SF Pro text weight at the target font size |
 
 Any concept that fails 2+ checks needs refinement before proceeding.
 
